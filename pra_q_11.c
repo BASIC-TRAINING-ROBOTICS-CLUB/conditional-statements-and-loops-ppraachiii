@@ -5,27 +5,28 @@ int main()
     int n;
     
     
-    printf("Enter the number :");
+    printf("Enter the number: ");
     scanf("%d", &n);
 
    
-    if (n <= 0) 
+    if (n <= 0)
     {
-        printf("Please enter a positive integer.\n");
+        printf("enter a positive number.\n");
         return 1; 
     }
-    
+
+   
     long long first = 0, second = 1, next;
     
     printf("Fibonacci series up to %d terms:\n", n);
 
     
-    if (n >= 1)
+    if (n >= 1) 
     {
         printf("%lld ", first);
     }
 
-    
+   
     for (int i = 1; i < n; i++) 
     {
         printf("%lld ", second);
@@ -35,5 +36,6 @@ int main()
     }
 
     printf("\n"); 
+
     return 0;
 }
